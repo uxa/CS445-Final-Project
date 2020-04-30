@@ -1,7 +1,7 @@
 #### CS410 Final Project, Fall 2019
 #### Pramav Velamakanni (pranavv2@illinois.edu), Tarik Koric (koric1@illinois.edu)
 
-## Technical document explaining the API that lets users access the trained models
+## Technical document explaining the app that lets users access the trained models
 
 ### Introduction
 
@@ -144,13 +144,11 @@ To train the model from scratch, download the data from https://amoeba.wolfram.c
 ![Original](/test/cat1.png)
 ![Processed](./results/cat1.png)
 
-
 ### Model summary
 
 ```
 __________________________________________________________________________________________________
 Layer (type)                    Output Shape         Param #     Connected to
-==================================================================================================
 input_24 (InputLayer)           (None, 256, 256, 3)  0
 __________________________________________________________________________________________________
 conv2d_496 (Conv2D)             (None, 256, 256, 64) 1792        input_24[0][0]
@@ -232,3 +230,4 @@ Trainable params: 31,031,745
 Non-trainable params: 0
 __________________________________________________________________________________________________
 ```
+
