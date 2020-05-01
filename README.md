@@ -19,7 +19,7 @@ Accuracy of models:
 - U-net with cat images - 78.74 %
 - U-net with dog images - 80.27 %
 
-*NOTE: Image pre-processing, training and model design is available in the notebook `TrainModel.ipynb`. Training can take several hours based on the system configuration.*
+*NOTE: Image pre-processing, training and model design is available in the notebook `TrainModel.ipynb`. Training can take several hours based on the system configuration. Due to the size of the data and trained models, this data is not included in the workspace. Please refer to dowonload links section below.*
 
 This program provides an API to access the trained models. User has the option to pick any of the 4 models to predict results for images for a single file, a directory of images or a URL that points to the image.
 
@@ -29,6 +29,8 @@ This program provides an API to access the trained models. User has the option t
 - `Jupyter` - notebooks used to train and test the models
 - `Keras` - used to train and save the model
 - `TensorFlow` - backend used for training the neural network
+- `scikit-image` - URL image import
+- `opencv-python` - image manipulation
 - `Pandas, NumPy` - load, manipulate and pre-process images for training
 - `scikit-learn` - prepare training and test data sets
 - `scipy` - misc tools used to resize images
@@ -44,7 +46,7 @@ Please ensure you have Python 3 installed
 
 The following command can be run to install all the dependencies (using `pip`) needed for this app to run.
 
-`pip install keras==2.3.1 tensorflow=2.1.0 jupyter pandas numpy scikit-learn matplotlib scipy==1.2.0`
+`pip install --requirement requirements.txt`
 
 #### Method 2 (Conda environment)
 
@@ -56,12 +58,18 @@ Activate the environment:  `conda activate TeamWolfram`
 
 From this project workspace execute: `pip install --requirement requirements.txt`
 
+### Download links
+
+`Original training data (data directory)`: https://amoeba.wolfram.com/index.php/s/StYiCHLLY2PMGLJ
+
+`Trained models (models directory)`: https://amoeba.wolfram.com/index.php/s/YLB3koFBGfkkz3B
+
 ### Files in this workspace
 
 - `app.py` - Main application file that interacts with the models
 - `TrainModel.ipynb` - This notebook contains the pre-processing and model training
 - `requirements.txt` - File containing the Python requirements for this project
-- `data/` directory (Misc: tests performed while testing and tweaking the application)
+- `data/` directory (Misc: tests performed while testing and tweaking the application, directory not included in the workspace)
     - `person` - folder containing the original images
     - `person_remove` - folder containing the images with backgrounds removed
     - `person_mask` - folder containing the masks of the images
@@ -71,7 +79,7 @@ From this project workspace execute: `pip install --requirement requirements.txt
     - `dog` - folder containing the original images
     - `dog_remove` - folder containing the images with backgrounds removed
     - `dog_mask` - folder containing the original images
-- `models/` directory
+- `models/` directory (not included in the workspace, refer to the download links section)
     - `all.h5` - Saved model trained on all datasets
     - `people.h5` - Saved model trained on the people dataset
     - `cat.h5` - Saved model trained on the cat dataset
@@ -230,4 +238,3 @@ Trainable params: 31,031,745
 Non-trainable params: 0
 __________________________________________________________________________________________________
 ```
-
