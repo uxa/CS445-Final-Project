@@ -69,6 +69,7 @@ From this project workspace execute: `pip install --requirement requirements.txt
 - `app.py` - Main application file that interacts with the models
 - `TrainModel.ipynb` - This notebook contains the pre-processing and model training
 - `requirements.txt` - File containing the Python requirements for this project
+- `CS445_Final_Project_Report.pdf` - project report
 - `data/` directory (Misc: tests performed while testing and tweaking the application, directory not included in the workspace)
     - `person` - folder containing the original images
     - `person_remove` - folder containing the images with backgrounds removed
