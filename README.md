@@ -1,5 +1,5 @@
 #### CS410 Final Project, Fall 2019
-#### Pramav Velamakanni (pranavv2@illinois.edu), Tarik Koric (koric1@illinois.edu)
+#### Pranav Velamakanni (pranavv2@illinois.edu), Tarik Koric (koric1@illinois.edu)
 
 ## Technical document explaining the app that lets users access the trained models
 
